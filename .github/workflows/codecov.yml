@@ -3,7 +3,7 @@ name: Generate Code Coverage
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0,12 * * *'
+    - cron: "0 0,12 * * *"
 
 jobs:
   test:
@@ -11,13 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/checkout@v4
 
       - name: Install pnpm
-        run: npm install -g pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
 
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
