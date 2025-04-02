@@ -8,9 +8,6 @@ importers:
 
   .:
     devDependencies:
-      '@dotenvx/dotenvx':
-        specifier: ^1.22.0
-        version: 1.22.0
       '@eslint/js':
         specifier: ^9.8.0
         version: 9.8.0
@@ -126,8 +123,8 @@ importers:
   packages/pipes:
     dependencies:
       onion-interceptor:
-        specifier: ^1.0.1
-        version: 1.0.1
+        specifier: ^1.0.5
+        version: 1.0.5
 
   packages/test-utils: {}
 
@@ -265,16 +262,6 @@ packages:
         optional: true
       search-insights:
         optional: true
-
-  '@dotenvx/dotenvx@1.22.0':
-    resolution: {integrity: sha512-EO09sE4iHu/MuKSx1FKQwXHQZ50mF0O4KUnBa3Rrlhgdwv0byg53lDcOpWpbaeq/f8z0dJ1EdV6Su1rugVanug==}
-    hasBin: true
-
-  '@ecies/ciphers@0.2.1':
-    resolution: {integrity: sha512-ezMihhjW24VNK/2qQR7lH8xCQY24nk0XHF/kwJ1OuiiY5iEwQXOcKVSy47fSoHPRG8gVGXcK5SgtONDk5xMwtQ==}
-    engines: {bun: '>=1', deno: '>=2', node: '>=16'}
-    peerDependencies:
-      '@noble/ciphers': ^1.0.0
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -608,18 +595,6 @@ packages:
   '@mswjs/interceptors@0.29.1':
     resolution: {integrity: sha512-3rDakgJZ77+RiQUuSK69t1F0m8BQKA8Vh5DCS5V0DWvNY67zob2JhhQrhCO0AKLGINTRSFd1tBaHcJTkhefoSw==}
     engines: {node: '>=18'}
-
-  '@noble/ciphers@1.0.0':
-    resolution: {integrity: sha512-wH5EHOmLi0rEazphPbecAzmjd12I6/Yv/SiHdkA9LSycsQk7RuuTp7am5/o62qYr0RScE7Pc9icXGBbsr6cesA==}
-    engines: {node: ^14.21.3 || >=16}
-
-  '@noble/curves@1.6.0':
-    resolution: {integrity: sha512-TlaHRXDehJuRNR9TfZDNQ45mMEd5dwUwmicsafcIX4SsNiqnCHKjE/1alYPd/lDRVhxdhUAlv8uEhMCI5zjIJQ==}
-    engines: {node: ^14.21.3 || >=16}
-
-  '@noble/hashes@1.5.0':
-    resolution: {integrity: sha512-1j6kQFb7QRru7eKN3ZDvRcP13rugwdxZqCjbiAVZfIJwgj2A65UmT4TgARXGlXgnRkORLTDTrO19ZErt7+QXgA==}
-    engines: {node: ^14.21.3 || >=16}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==, tarball: https://r2.cnpmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz}
@@ -1649,10 +1624,6 @@ packages:
     resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==, tarball: https://r2.cnpmjs.org/combined-stream/-/combined-stream-1.0.8.tgz}
     engines: {node: '>= 0.8'}
 
-  commander@11.1.0:
-    resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
-    engines: {node: '>=16'}
-
   commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
 
@@ -2005,10 +1976,6 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==, tarball: https://r2.cnpmjs.org/eastasianwidth/-/eastasianwidth-0.2.0.tgz}
 
-  eciesjs@0.4.11:
-    resolution: {integrity: sha512-SmUG449n1w1YGvJD9R30tBGvpxTxA0cnn0rfvpFIBvmezfIhagLjsH2JG8HBHOLS8slXsPh48II7IDUTH/J3Mg==}
-    engines: {bun: '>=1', deno: '>=2', node: '>=16'}
-
   emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
 
@@ -2184,14 +2151,6 @@ packages:
 
   fastq@1.17.1:
     resolution: {integrity: sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==}
-
-  fdir@6.4.2:
-    resolution: {integrity: sha512-KnhMXsKSPZlAhp7+IjUkRZKPb4fUyccpDrdFXbi4QL1qkmFh9kVY09Yox+n4MaOb3lHZ1Tv829C3oaaXoMYPDQ==}
-    peerDependencies:
-      picomatch: ^3 || ^4
-    peerDependenciesMeta:
-      picomatch:
-        optional: true
 
   fetch-blob@3.2.0:
     resolution: {integrity: sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==}
@@ -3368,10 +3327,6 @@ packages:
     resolution: {integrity: sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==, tarball: https://r2.cnpmjs.org/object-keys/-/object-keys-1.1.1.tgz}
     engines: {node: '>= 0.4'}
 
-  object-treeify@1.1.33:
-    resolution: {integrity: sha512-EFVjAYfzWqWsBMRHPMAXLCDIJnpMhdWAqR7xG6M6a2cs6PMFpl/+Z20w9zDW4vkxOFfddegBKq9Rehd0bxWE7A==}
-    engines: {node: '>= 10'}
-
   object.assign@4.1.5:
     resolution: {integrity: sha512-byy+U7gp+FVwmyzKPYhW2h5l3crpmGsxl7X2s8y43IgxvG4g3QZ6CffDtsNQy1WsmZpQbO+ybo0AlW7TY6DcBQ==}
     engines: {node: '>= 0.4'}
@@ -3390,8 +3345,8 @@ packages:
     resolution: {integrity: sha512-1FlR+gjXK7X+AsAHso35MnyN5KqGwJRi/31ft6x0M194ht7S+rWAvd7PHss9xSKMzE0asv1pyIHaJYq+BbacAQ==, tarball: https://r2.cnpmjs.org/onetime/-/onetime-6.0.0.tgz}
     engines: {node: '>=12'}
 
-  onion-interceptor@1.0.1:
-    resolution: {integrity: sha512-oFALxBpgNDew/J7Rq2foNWxqvGEMZYs9HLcPlJZRH7dTcRtW/2VJy/n5BW3hYAxYABbpFHC3oVDL8SUu5d5JgQ==}
+  onion-interceptor@1.0.5:
+    resolution: {integrity: sha512-r8yKkxl+zoAyc7hUNyGHoWzLgVJgz/jk8ihQj2eT0byFX4jih6kxxAsX46rvhDfah9V7Wt/9LK+C35QrFvsdmg==}
 
   open@9.1.0:
     resolution: {integrity: sha512-OS+QTnw1/4vrf+9hh1jc1jnYjzSG4ttTBB8UxOwAnInG3Uo4ssetzC1ihqaIHjLJnA5GGlRl6QlZXOTQhRBUvg==}
@@ -3614,10 +3569,6 @@ packages:
   picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
-
-  picomatch@4.0.2:
-    resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
-    engines: {node: '>=12'}
 
   pify@2.3.0:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==, tarball: https://r2.cnpmjs.org/pify/-/pify-2.3.0.tgz}
@@ -4978,22 +4929,6 @@ snapshots:
     transitivePeerDependencies:
       - '@algolia/client-search'
 
-  '@dotenvx/dotenvx@1.22.0':
-    dependencies:
-      commander: 11.1.0
-      dotenv: 16.4.5
-      eciesjs: 0.4.11
-      execa: 5.1.1
-      fdir: 6.4.2(picomatch@4.0.2)
-      ignore: 5.3.1
-      object-treeify: 1.1.33
-      picomatch: 4.0.2
-      which: 4.0.0
-
-  '@ecies/ciphers@0.2.1(@noble/ciphers@1.0.0)':
-    dependencies:
-      '@noble/ciphers': 1.0.0
-
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
 
@@ -5441,14 +5376,6 @@ snapshots:
       is-node-process: 1.2.0
       outvariant: 1.4.3
       strict-event-emitter: 0.5.1
-
-  '@noble/ciphers@1.0.0': {}
-
-  '@noble/curves@1.6.0':
-    dependencies:
-      '@noble/hashes': 1.5.0
-
-  '@noble/hashes@1.5.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -6678,8 +6605,6 @@ snapshots:
     dependencies:
       delayed-stream: 1.0.0
 
-  commander@11.1.0: {}
-
   commander@2.20.3: {}
 
   common-ancestor-path@1.0.1: {}
@@ -7076,13 +7001,6 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  eciesjs@0.4.11:
-    dependencies:
-      '@ecies/ciphers': 0.2.1(@noble/ciphers@1.0.0)
-      '@noble/ciphers': 1.0.0
-      '@noble/curves': 1.6.0
-      '@noble/hashes': 1.5.0
-
   emoji-regex@10.3.0: {}
 
   emoji-regex@8.0.0: {}
@@ -7373,10 +7291,6 @@ snapshots:
   fastq@1.17.1:
     dependencies:
       reusify: 1.0.4
-
-  fdir@6.4.2(picomatch@4.0.2):
-    optionalDependencies:
-      picomatch: 4.0.2
 
   fetch-blob@3.2.0:
     dependencies:
@@ -8578,8 +8492,6 @@ snapshots:
 
   object-keys@1.1.1: {}
 
-  object-treeify@1.1.33: {}
-
   object.assign@4.1.5:
     dependencies:
       call-bind: 1.0.7
@@ -8601,7 +8513,7 @@ snapshots:
     dependencies:
       mimic-fn: 4.0.0
 
-  onion-interceptor@1.0.1: {}
+  onion-interceptor@1.0.5: {}
 
   open@9.1.0:
     dependencies:
@@ -8858,8 +8770,6 @@ snapshots:
   picocolors@1.0.1: {}
 
   picomatch@2.3.1: {}
-
-  picomatch@4.0.2: {}
 
   pify@2.3.0: {}
 
