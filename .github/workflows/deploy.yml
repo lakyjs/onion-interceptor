@@ -26,6 +26,9 @@ jobs:
           node-version: 20
           cache: "pnpm"
 
+      - name: config npm
+        run: npm config set strict-ssl false
+
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
