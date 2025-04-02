@@ -123,4 +123,32 @@ export class OnionInterceptor {
       coreFn
     ) as Promise<Res>;
   }
+
+  /**
+   * eject 方法用于卸载中间件。(use 的逆向过程)
+   * @param middleware - 一个或多个中间件函数或中间件类构造器。
+   * @returns 当前拦截器实例。
+   */
+  public eject(...agrs:Array<Middleware>){
+    agrs.forEach((middleware)=>{
+      const fn = middleware;
+      if (!isFunction(fn))
+        throw new TypeError("middleware or intercept must be a function!");
+
+      let node = new MiddlewareLinkNode()
+      node.setNext(headMap.get(this) as MiddlewareLinkNode)
+
+      while (node) {
+        if (node.getNext()?.isHandleAs(fn)) {
+          const _node = node.getNext()!
+          node.setNext(_node.getNext()! ?? null)
+          _node.destroy()
+          break
+        }
+        node = node.getNext() as MiddlewareLinkNode
+      }
+    })
+
+    return this
+  }
 }

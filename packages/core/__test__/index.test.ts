@@ -269,5 +269,15 @@ describe("OnionInterceptor", () => {
         cfg: instance3.defaults,
       });
     });
+
+    interceptor.eject(mockErrorInterceptor,mockAuthInterceptor,mockLoadingInterceptor)
+    interceptor2.eject(mockErrorInterceptor2,mockAuthInterceptor,mockLoadingInterceptor)
+    interceptor3.eject(mockErrorInterceptor3,mockAuthInterceptor,mockLoadingInterceptor)
+
+    try {
+      interceptor.eject(3 as any)
+    } catch (error:any) {
+      expect(error.message).toBe('middleware or intercept must be a function!')
+    }
   });
 });
